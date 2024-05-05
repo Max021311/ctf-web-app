@@ -9,10 +9,11 @@
 1. Setup environment vars
 
 It's required to create a `.env` file in project root with the following vars where `PORT` is the port for running the web app and `VITE_SERVER_HOST` is URL to the server
-`
-VITE_SERVER_HOST=http://localhost:3010
+```bash
+VITE_AUTH_SERVER_HOST=http://localhost/api/auth # Replace with the correct host
+VITE_CRUD_SERVER_HOST=http://localhost/api/crud # Replace with the correct host
 PORT=3000
-`
+```
 
 2. Install dependencies with `yarn install`
 
