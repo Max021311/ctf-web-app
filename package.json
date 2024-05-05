@@ -1,0 +1,73 @@
+{
+  "name": "electron-vite-tailwind-starter",
+  "version": "0.7.0",
+  "author": "Grzegorz Leoniec",
+  "license": "MIT",
+  "scripts": {
+    "dev": "env -S $(cat .env) yarn run-p dev:*",
+    "dev:vite": "vite",
+    "dev:electron": "electron src/main/index.ts",
+    "build": "run-s build:*",
+    "build:vite": "vite build --base=./",
+    "build:electron": "electron-builder build",
+    "postinstall": "install-app-deps"
+  },
+  "dependencies": {
+    "@formkit/themes": "^1.0.0-beta.8",
+    "@formkit/vue": "^1.0.0-beta.8",
+    "@vue-hero-icons/outline": "^1.7.2",
+    "axios": "^0.27.2",
+    "electron-context-menu": "^3.0.0",
+    "electron-ipc-proxy": "^2.1.0",
+    "electron-window-state": "^5.0.3",
+    "jwt-decode": "2.2.0",
+    "lodash-es": "^4.17.21",
+    "vue": "^3.0.11",
+    "vue-final-modal": "^3.4.4",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.2.2",
+    "@vue/compiler-sfc": "^3.0.11",
+    "autoprefixer": "^10.2.5",
+    "electron": "^12.0.6",
+    "electron-builder": "^22.10.5",
+    "electron-reloader": "^1.2.1",
+    "eslint": "^8.15.0",
+    "eslint-plugin-vue": "^8.7.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.13",
+    "tailwindcss": "^2.1.2",
+    "vite": "^2.2.4"
+  },
+  "peerDependencies": {
+    "postcss": "^8.2.13"
+  },
+  "keywords": [
+    "electron",
+    "vue",
+    "vite",
+    "tailwind"
+  ],
+  "main": "src/main/index.ts",
+  "resolutions": {
+    "postcss": "^8.2.13"
+  },
+  "build": {
+    "directories": {
+      "output": "build"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "files": [
+      "src/main/index.ts",
+      "src/main",
+      "src/renderer",
+      "splashscreen.html",
+      "dist",
+      "tailwind.config.js",
+      "package.json"
+    ]
+  }
+}
