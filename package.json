@@ -17,7 +17,7 @@
     "@formkit/vue": "^1.0.0-beta.8",
     "@vue-hero-icons/outline": "^1.7.2",
     "axios": "^0.27.2",
-    "electron-context-menu": "^3.0.0",
+    "electron-context-menu": "^4.0.0",
     "electron-ipc-proxy": "^2.1.0",
     "electron-window-state": "^5.0.3",
     "jwt-decode": "2.2.0",
