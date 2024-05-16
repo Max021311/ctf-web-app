@@ -4,7 +4,7 @@
   "author": "Grzegorz Leoniec",
   "license": "MIT",
   "scripts": {
-    "dev": "env -S $(cat .env) yarn run-p dev:*",
+    "dev": "yarn run-p dev:*",
     "dev:vite": "vite",
     "dev:electron": "electron src/main/index.ts",
     "build": "run-s build:*",
